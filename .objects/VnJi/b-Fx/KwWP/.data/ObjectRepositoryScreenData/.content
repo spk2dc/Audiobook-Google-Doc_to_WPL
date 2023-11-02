@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="d3U5cNRhDUmo9bvy5Om0xg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAA4SURBVDhPY0i32n4AiP+TifeDDMAmQTQeZAbAADIbG0DWQ10DyMGjXhh0XiAHU8WA/eiCxOPtuwEl0a7qam5sogAAAABJRU5ErkJggg==" Selector="&lt;html app='chrome.exe' title='WPL Purchase Suggestion Form' /&gt;" Title="WPL Purchase Suggestion Form" Url="https://docs.google.com/forms/u/0/d/e/1FAIpQLScrW-vq8m_AsD-Egt1rqoM-24qH6tniHj8lzJuaHa1FG_ctjw/formResponse">
+      <imageRef attrName="InformativeScreenshot" originalValue="56a42994f9b096af47cec9d7191fc5f8.jpg" xmlns="">0QBbJbpElKE6YVytbUbhQ3w</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

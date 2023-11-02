@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="2ej0gWPVxkyFPoTDSzKugQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAw0lEQVQ4T+2RQRGDQAxFkYAEDHQGCUhAAhKQgINKQAISeumda29IQEL73pJlZjs99N7+mQ9J/k92CdUfB+6PSwcX+IQrHEI6Qa0PTc8Ndlmw2eIEW6hxh3MyAOJr1Aaof4y8V3TaGN4EcgdpcKhNxm3ICeQO2Qw8vY76CRugjepFc4ba8fgAm+BXAzZYLI28jrqfkL+3uCW5u9gN8tLSVnk30G0vyQmI56g1kadmeOyOIC/K60ob3k/0T2Rd7xTSj6OqXqxNvnfBkyqbAAAAAElFTkSuQmCC" Selector="&lt;html app='chrome.exe' title='Purchase Suggestions | Waterloo Public Library' /&gt;" Title="Purchase Suggestions | Waterloo Public Library" Url="https://www.wpl.ca/browse/purchase-suggestions">
+      <imageRef attrName="InformativeScreenshot" originalValue="75926a206c1908e5fde8e17039a66100.jpg" xmlns="">0n59SoLCO8UeiX_J3dKfWeA</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

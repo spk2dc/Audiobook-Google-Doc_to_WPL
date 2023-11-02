@@ -1,0 +1,16 @@
+﻿{
+  "Name": "Purchase button",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "NLIR-no8tE-j15uW5erWhA",
+  "Reference": "lvSrrP8hH0CV8Grn9LKFSg/NLIR-no8tE-j15uW5erWhA",
+  "ParentRef": "lvSrrP8hH0CV8Grn9LKFSg/rw78sL9PxEqw1m-t97v8gQ",
+  "Created": "2023-09-24T21:01:03.8276617Z",
+  "Updated": "2023-09-24T21:02:47.4282474Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.8.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.8.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

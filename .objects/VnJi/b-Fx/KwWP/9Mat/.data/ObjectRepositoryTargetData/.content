@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="mNxOTkjEwECxt_fHC7BQAw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://docs.google.com/forms/u/0/d/e/1FAIpQLScrW-vq8m_AsD-Egt1rqoM-24qH6tniHj8lzJuaHa1FG_ctjw/formResponse" DesignTimeRectangle="600, 601, 195, 21" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Submit another response'" FullSelectorArgument="&lt;webctrl tag='A' innertext='Submit another response' /&gt;" FuzzySelectorArgument="&lt;webctrl innertext='Submit another response' check:text='Submit another response' /&gt;" Guid="9871cd15-755c-4292-886c-4428b5abc23c" ScopeSelectorArgument="&lt;html app='chrome.exe' title='WPL Purchase Suggestion Form' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="600, 423, 738, 70" ElementType="Text" FriendlyName="'WPL Purchase'" FullSelectorArgument="&lt;webctrl tag='DIV' innertext='WPL Purchase Suggestion Form' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DIV' innertext='WPL Purchase Suggestion Form' check:text='WPL Purchase Suggestion Form' /&gt;" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="642277f5186a6c1d3955df524fb0def8.png" xmlns="">0aq5i2vx35EWOhQC0h444zA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

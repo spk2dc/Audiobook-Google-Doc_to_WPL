@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="WIuiz_T1fUuhQCWU67RfIg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLScrW-vq8m_AsD-Egt1rqoM-24qH6tniHj8lzJuaHa1FG_ctjw/viewform" DesignTimeRectangle="559, 1017, 119, 45" DesignTimeScaleFactor="1.25" FriendlyName="'Submit'" FullSelectorArgument="&lt;webctrl tag='SPAN' innertext='Submit' idx='1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' innertext='Submit' check:text='Submit' /&gt;" Guid="1600fd85-15a4-460d-9fd0-ae3370b4ba97" ScopeSelectorArgument="&lt;html app='chrome.exe' title='WPL Purchase Suggestion Form' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="589, 1017, 59, 45" ElementType="Text" FriendlyName="'Submit'" FullSelectorArgument="&lt;webctrl tag='SPAN' innertext='Submit' idx='2' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' innertext='Submit' check:text='Submit' /&gt;" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="ccbbe2a17ddf896f3747909587315894.png" xmlns="">0nuEEo8HRl0C7khrLIl26kA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

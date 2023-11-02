@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Activity mc:Ignorable="sap sap2010" x:Class="WPL" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="list" Type="InArgument(s:String[])" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>850.4,4271.2</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>WPL_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="WPL" sap:VirtualizedContainerService.HintSize="668.8,4206.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="bookAuthor" />
+      <Variable x:TypeArguments="x:String" Name="bookTitle" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="606.4,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;WPL list: (0) &quot;+list(0)]" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Request a book" sap:VirtualizedContainerService.HintSize="606.4,489.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" IsCVEnabled="False" OpenMode="Always" ScopeGuid="3a89db22-bbb9-4ba5-bafc-66599babb7c7" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,272.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Purchase button'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3a89db22-bbb9-4ba5-bafc-66599babb7c7" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.wpl.ca/browse/purchase-suggestions" ContentHash="5dvPzfr2WE2qJFhfLfKHbg" CvElementArea="715, 884, 355, 57" CvTextArea="734, 902, 314, 24" CvTextArgument="Make a purchase suggestion" CvType="Button" DesignTimeRectangle="716, 885, 353, 55" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Purchase button'" FullSelectorArgument="&lt;webctrl class='btn-primary' parentid='page-page' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl class='btn-primary' parentid='page-page' tag='A' type='' aaname='Make a purchase suggestion' check:innerText='Make a purchase suggestion' /&gt;" Guid="1f1ad72e-5b81-4f3e-ba4c-c9f3f462b837" InformativeScreenshot="bd0fbd60c2f75cc73ebe5d16543784c5.png" Reference="lvSrrP8hH0CV8Grn9LKFSg/NLIR-no8tE-j15uW5erWhA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Purchase Suggestions | Waterloo Public Library' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="715, 480, 498, 43" CvTextArgument="Purchase Suggestions Form" CvType="Text" DesignTimeRectangle="716, 472, 993, 51" ElementType="Text" FriendlyName="'Purchase button'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='' aaname='Purchase Suggestions Form' check:innerText='Purchase Suggestions Form' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="2ej0gWPVxkyFPoTDSzKugQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAw0lEQVQ4T+2RQRGDQAxFkYAEDHQGCUhAAhKQgINKQAISeumda29IQEL73pJlZjs99N7+mQ9J/k92CdUfB+6PSwcX+IQrHEI6Qa0PTc8Ndlmw2eIEW6hxh3MyAOJr1Aaof4y8V3TaGN4EcgdpcKhNxm3ICeQO2Qw8vY76CRugjepFc4ba8fgAm+BXAzZYLI28jrqfkL+3uCW5u9gN8tLSVnk30G0vyQmI56g1kadmeOyOIC/K60ob3k/0T2Rd7xTSj6OqXqxNvnfBkyqbAAAAAElFTkSuQmCC" InformativeScreenshot="75926a206c1908e5fde8e17039a66100.jpg" Reference="lvSrrP8hH0CV8Grn9LKFSg/rw78sL9PxEqw1m-t97v8gQ" Selector="&lt;html app='chrome.exe' title='Purchase Suggestions | Waterloo Public Library' /&gt;" Title="Purchase Suggestions | Waterloo Public Library" Url="https://www.wpl.ca/browse/purchase-suggestions" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="606.4,3382.4" sap2010:WorkflowViewState.IdRef="ForEach`1_3" MaxIterations="5" Values="[list]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="x:String">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:String" Name="currentItem" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="572.8,3194.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Form" sap:VirtualizedContainerService.HintSize="529.6,2421.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="Never" ScopeGuid="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,2204.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_3">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[bookTitle]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[currentItem.Split(" by ")(0)]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_4">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[bookAuthor]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[currentItem.Split(" by ")(1).Split(" - ")(0)]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_14" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Text="Senthil Kannan" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLScrW-vq8m_AsD-Egt1rqoM-24qH6tniHj8lzJuaHa1FG_ctjw/viewform" ContentHash="gojSjDUySEOaUHEHJGOZCw" CvElementArea="584, 964, 380, 35" CvTextArea="587, 974, 103, 16" CvTextArgument="Your answer" CvType="InputBox" DesignTimeRectangle="589, 967, 369, 30" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'name'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" Guid="9b0d286a-243c-4f07-ab92-eca4b724c8f2" InformativeScreenshot="c0a4fc00bf3c326199fb4f25bb4eeed4.png" Reference="lvSrrP8hH0CV8Grn9LKFSg/3Sf0GVMaTk6BKUAynVeZQg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='WPL Purchase Suggestion Form' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArea="589, 905, 67, 17" CvTextArgument="Name *" CvType="Text" DesignTimeRectangle="589, 899, 738, 30" FriendlyName="'name'" FullSelectorArgument="&lt;webctrl tag='FORM' /&gt;&lt;webctrl tag='DIV' innertext='Name *' idx='5' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='FORM' /&gt;&lt;webctrl tag='DIV' innertext='Name *' check:text='Name *' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAuYAAAAiCAYAAAATfxzYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAASVSURBVHhe7d3PS9t3HMfx/SkWLB5SQnH0oCB4CEQQwih4KeQQyEEsdFgY26GUwAjfS8hg0kGFgcMdxDCR0CEDqQNnLmJOCsviirqDI4fV2AoZCK99Psk3mnzzQy3WfB3PB3xpv598vonHZ768+eYTAQAAAOg5whwAAADwAcIcAAAA8AHCHAAAAPABwhwAAADwAcIcAAAA8AHCHAAAAPABwhwAAADwAcIcAAAA8AHCHAAAAPABwhwAAADwAU+Yl7QQ61ffnVElcxV3zau+x9GWu3KbHf0UVeHxoo7dcwAAAKAXOoS5OUYcbZy4y03+X2F+vBwnzAEAANBzncPcHCNf59R63/z2h/nbFUf7Kzs6+rchzE8rOtrJan/uV7139wEAAAA3pUOYT+nzJwHzb7uRls5hXtlb0+zTCT0I1MI+GIrqeWZH5VN3Q5V7fSCtrVKuYf+gQpMvtFEyW07L2s4k9HDI/g39GhiaMO+z2+ZLgvnMQlbJybCC1S8T9j0cLRc6jeFYZf2dGlPh/l1zfKpC+J4Kw8MqjNpzc3yWVskEOwAAAHCTOoS5ie7DrGI2mEPm/00jLe3DvLLpKGQjenxaqcyaNlYXlXoS0YBZC6XzDVFdvz6ggcCgHj1LK5VOK+nu7QslNJMIq2/QRL1ZT6UTilUDPaDYkq32c/XPDEYTms1ktfAyoUeD9r3DSuW7xblh75Dn0ypWA31Yb5Z39a7t6A4AAADw8XUOc3u2FK+FtdMurBvDvKSVZxGNR7xz6RW9/sLundZK2V06u771bvz2t6Nm3bzmnW8/WdNz+yUhMq+iu1Rfs+M2TXfkT3JKjpi9D+d14C61V1HpmzEVoo72vrpXHWc5arqzDwAAANycrmFuz5fj9m51WMnNekS3C/POSpm42RvXwqG70O36Tces92t8btddqGu9pvzztDmP6AfvVmPLsXsbvwy0On4VV+H+mPZ/Nydvf9Gb4bv640VeTLEAAACgFy4Ic6NlpKVzWJd37Yx5VKHqOEnjcbUwj2WaR1baXVOL725H42e2eveboz9nz0P8+NVjFb/P6z1lDgAAgB64OMyN5pGW9nvO570dLazmtL1XVvmfsrbnop5Ivs4wn9LsWk4b6+2OvA4uGDMHAAAA/OJSYW7Xz0dadtvs2dGMO9dd9Mxpf8goy+XDvPtdcQAAAOC2uGSYG2cjLXHFIp49JfOaHR9x8u7CueJcxBPQ1xPmtfft12S2yyA5AAAAcEtcPsyN+khLbYa7Yc9pXkkb7SNpbTXeMd9brMX8RwhzHZr3tn+HfYKLp83L62l9+WP7554DAAAAfnSlMLev10ZaWvdsfxeurg8MxavPH08+nVDwTkDBwdr+5Ka78brC3DhYmqr9sJB95vnLRb3Ozp89Dz3keB6jCAAAAPjYFcPcqI+0tOypqNjwa53B0JSSq3+pVH2sYWNsX1+YW+Wdxl/+DOjB+JRm1r3XAwAAAP7mCXMAAAAAvUCYAwAAAD5AmAMAAAA+QJgDAAAAPkCYAwAAAD5AmAMAAAA+QJgDAAAAPkCYAwAAAD5AmAMAAAA9J/0HrhJVrx09Ip0AAAAASUVORK5CYII=" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'card #'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_15" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Text="23420001564098" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLScrW-vq8m_AsD-Egt1rqoM-24qH6tniHj8lzJuaHa1FG_ctjw/viewform" ContentHash="OWpYP1L8x0m0RXOOjHPyvg" CvElementArea="583, 1149, 381, 39" CvTextArea="587, 1160, 102, 16" CvTextArgument="Your answer" CvType="InputBox" DesignTimeRectangle="589, 1154, 369, 30" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'card #'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' idx='2' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='whsOnd zHQkBf' aaname='' /&gt;" Guid="51874ae7-1132-4c78-9205-64df46de5b38" InformativeScreenshot="8de4f8490d7a592b13e1736895af5fa2.png" Reference="lvSrrP8hH0CV8Grn9LKFSg/zKic2OqXaUGj27_7l_zEyg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='WPL Purchase Suggestion Form' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArea="587, 1091, 200, 22" CvTextArgument="Library Card Number *" CvType="Text" DesignTimeRectangle="589, 1086, 738, 30" FriendlyName="'card #'" FullSelectorArgument="&lt;webctrl tag='DIV' innertext='Library Card Number *' idx='4' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DIV' innertext='Library Card Number *' check:text='Library Card Number *' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_16" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Text="senthil.kannan.61109@gmail.com" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLScrW-vq8m_AsD-Egt1rqoM-24qH6tniHj8lzJuaHa1FG_ctjw/viewform" ContentHash="YJfeR6KNiEOOKDr79DjePg" CvElementArea="585, 754, 380, 37" CvTextArea="587, 765, 103, 16" CvTextArgument="Your answer" CvType="InputBox" DesignTimeRectangle="589, 815, 369, 30" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'email'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' idx='3' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" Guid="54f71a93-af61-47b9-9393-eb646c6ebd89" InformativeScreenshot="99eb9d56ce36f7425e3d7328c5ec7e5d.png" Reference="lvSrrP8hH0CV8Grn9LKFSg/DoqAx02YDEGLhQ7Bq4KaWw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='WPL Purchase Suggestion Form' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvElementArea="585, 754, 380, 37" CvTextArea="587, 765, 103, 16" CvTextArgument="Your answer" CvType="InputBox" DesignTimeRectangle="589, 747, 738, 30" FriendlyName="'email'" FullSelectorArgument="&lt;webctrl tag='DIV' innertext='Email Address *' idx='4' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DIV' innertext='Email Address *' check:text='Email Address *' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAuYAAAAiCAYAAAATfxzYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAWuSURBVHhe7dzhSxtJGMfx+5N9oYRUDBKlEZYSBYXkOD1SEQ1IELkKjWCgKRchBBWrLQUJ4Sq1IlJCSZEQnntmdjbuJmmrXkuX6/cDwc7s7GYnr34zfXZ/EwAAAAA/HcEcAAAAiAGCOQAAABADBHMAAAAgBgjmAAAAQAwQzAEAAIAYIJgDAAAAMUAwBwAAAGKAYA4AAADEAMEcAAAAiAGCOQAAABADBHMAAAAgBgjmAAAAQAwQzAEAAIAYIJgDAAAAMUAwBwAAAGKAYA4AAADEAMEcAAAAiAGCOQAAABADBHMAAAAgBgjmAAAAQAwQzAEAAIAYiATz+cQjGfMqcuHaETeHkjfHH+9Is+f6AAAAAHwXkWDe3PZkbCItK8dd13Pr3V9fPgYAAADgv4mWsty8kpXUiF3zTt3fLV+qSdt1AQAAAPh+hmrML3azQzvj/k66J1st1+F0mlVZWUjL+ISG9omUJBdK0rgK76hfStkbVR6jCwBzzuqrgXZdTktZGTeLgP6xEbrX0ijlZGbSfK9+Jj3J77ak4w4b/jyyUm62pLzs+dfUe5xarkgzPFB1rw5lIzKPNak0P/sHe29kwyxW1t/4bae5ndGxBanduA6jXZN5vUZm99J1qPZZ5Pvtb3TtjhnHa9r/SFb238jmk5T/72N3DAAAAL+M4Yc/e2eyMa0h8vGOvDPtYLd8uR4Jvt2ToiQ1RI57JakcHEpjvyIrczousSjl927QfYO5fs/4ZFby60V5+ve5Ozagp9fM6thkVjZe6Pfqd1fWzcLhkXh7t4E4WGAkp1OSKVb9caVFe89J/d7+8uGjhmkzv7miP4+Dqjw189BzN976QxoFbc/uSNNvKjcvvVYkRB+YkJ25XcB0dF7mt5xbk/J+6NqJnFQ/ujEumI8lUjL+pCBPde7Vf9wxAAAA/DKGg7nq1As2LOYbn91ueVbKH9xB61y2HmuY9MpyEX4QNAiiC1VX8nLPYD69JkcDu9lD3m7LzGxGNk5c22pLZUHPD4VnP5hrWA/vXmscry3ruERRTl3P1d6ijvPkWX8xoXQxsmTux+2St1/mdIwuOK5sU8N8VTwb+sNz0FvbTMtYqiR+nu/K0appr0kjPCe30ElunvltF8zNYuFbUwcAAMD/18hg3g/U0xmZCofIQGtHpjRMzr8crjj3SzxyUrWH7hnMQyH3vo5W9fwJDfau3S9liSwotP+5WWjcjus2zCIkLfmX17e76IM+VCSj95ev+yNsUNdFwJH52w/ibq7BHHo6p1G/nS4iqkuh3yQoZaF8BQAA4Jf2hWCugVUDoyn7iJRdBL4WJu2xoAzkBwXz9plUVhdlKqgx73/uEMxt/+046V1LrWAWE3p+Mi3e8raUjy+lG3klZEu2ZvW43UH3d91t4LaB3ZWu3NQlr9cIwnsQ5qP3F/oQzAEAABDyxWDeD8uFQ9cO+VqYtHXWPzCYdw4ln9Sxpib87bm02237qf2pfQ8J5k73uiWN3W3JBw+Bpv+QauhcW6ZiSmXs+9x1fq9Nrz+/qW1N5idFvW7wPwXKBfOpgl/fPvR5reHfjCOYAwAAQH07mI8Kyz+xlMWvCR8O3HcuZRkI5t1PGuw/RYtYuudlf7c7/CYWG6AXpbynfxN6vttRt+931/nVzLzD83Q76Mli9G0uQwjmAAAAUA8L5nd++NO90SQUZC378GT42ncP5n6wHnhYs3cpz8wC4N7B3NV7p0pyOqp0JXw/QdBOpe0bavpR3i5SPJnR38PunPfptXN6jUROKsFDo07n9aGcBj8QwRwAAADqgcFc7vi6RB1nH67UQJvbkZqOq+2uScaUophXFD4gmMv5jsyYsemcbL4w1yvKfFrbpu8hO+aD8zioy9bvfs15vhHeSXch3vQHdeTWmf+e89DrFfveV8Qz85xetPdqSliCVzZ6z88pZQEAAIAj8i/6/q+dql2howAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'library'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLScrW-vq8m_AsD-Egt1rqoM-24qH6tniHj8lzJuaHa1FG_ctjw/viewform" ContentHash="SSZSLmyzWka8osKn0ZWxhA" CvTextArea="627, 892, 103, 21" CvTextArgument="Main Library" CvType="Text" DesignTimeRectangle="589, 888, 728, 30" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'library'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='docssharedWizToggleLabeledContainer ajBQVb N2RpBe' aaname='' check:innerText='Main Library' /&gt;" Guid="b8535bb3-d1f2-4e5c-8467-52ddb92c575b" InformativeScreenshot="f042dd014c5c4e5701d35272dddf93de.png" Reference="lvSrrP8hH0CV8Grn9LKFSg/bNPU2Pp9rUGK-1AaqCU7TA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='WPL Purchase Suggestion Form' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'title'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_17" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Text="[bookTitle]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLScrW-vq8m_AsD-Egt1rqoM-24qH6tniHj8lzJuaHa1FG_ctjw/viewform" ContentHash="tOJXc-eIPUqly-VAhsVbvg" CvElementArea="581, 728, 384, 40" CvTextArea="587, 740, 102, 16" CvTextArgument="Your answer" CvType="InputBox" DesignTimeRectangle="589, 734, 369, 30" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'title'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' idx='5' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" Guid="7d62c1aa-c812-4fd2-aa3a-2c8d5a1143f8" InformativeScreenshot="b61360de99d5498fe64ccab7290288de.png" Reference="lvSrrP8hH0CV8Grn9LKFSg/4J0vpytyLEyq7n0-Wu6jqg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='WPL Purchase Suggestion Form' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArea="587, 671, 55, 18" CvTextArgument="Title *" CvType="Text" DesignTimeRectangle="589, 666, 738, 30" FriendlyName="'title'" FullSelectorArgument="&lt;webctrl tag='DIV' innertext='Title *' idx='4' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DIV' innertext='Title *' check:text='Title *' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAuYAAAAiCAYAAAATfxzYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAANYSURBVHhe7d3BSxxnGMDh/ikJNHjYEEJuEYQWBAuClICXQA7CHkoLCckpLSLSInuR7aGkYGihwUBlexFJCbnUQ4iBBPcUoVZTxUVSpaUIDazE8nZmnRA165KSqKM+DwzLfPPN7PW3w7cz7wUAAHDghDkAAOSAMAcAgBwQ5gAAkAPCHAAAckCYAwBADghzAADIAWEOAAA5IMwBACAHhDkAAOTA24V5vRrDne/Hic7vYi4bamW6lMw9WYyxZ9kAAADQsCXMqzF0Mg3nN9lKMZ2esjETN7sL0VaciNXGNTbtFuB7FuYbD2Ph7KlYrGb7AABwyGwJ81rcLZdjeMs2UPygEeIXrm0fHy7fi6XsrGb2PcyTHxWLwhwAgEOs5VKW1Z+KjTAfepwNvKF9CfP1h1H7uhIrC2vxYkuYv/h7PlbGy7H8azYPAAAOgbcM82z5S1+lsZTl5fzt26sQ3zXMN1bjwcjVuHC+0Din7XxvXBmZitWN7HgzC7djrut0zCZBPtvVvv2zvT2e3qllEwEAIP/eaZjXa9V4cH8qbn6WBnhPDE1MJfvVWKpvzm4a5hu1GCsmQV7oiStfjcb4xGgMXe6JtjTQd6xdb2b9z/lY/jIL8r5yrCytxXqroAcAgBx6p2H+0v9ZyjL3Q29j7NZiNpBZ+jH97kIM3M+qfhf/Llfiafvp+P1GKX47+2EsPGo9HwAA8uiAw3wmvulIxvon47WcflaJvuTaHd/OZANNrFdj8eNTMXv9XvyT7P71/Ucx216M5T82DwMAwGFxsGGexXf6HbtupRaPWnk+H7Xr116FeBrqn3wRywvumgMAcLjkIsw7Bycaa9ObbrNr2WQAADi68nHHvNVdcQAAOAYONszrkzGQnt9xI554kgoAAMfYHob5pRjb8Sjx14O9noxtvl207/aOyeljFD8vxS9bLwwAAEfUnoT52s9XG+eduTQYw+XRmM6WiTe9k/68GsPd6YuFCtF9uRS3JiZjbGQwLp5L5haSuTseowgAAEfRnoR5erf7bn9vnEmPFT6N8ezgbktcdr7588S5rrjYX4kn/vcJAMAx0TLMAQCA/SHMAQAgB4Q5AADkgDAHAIAcEOYAAJADwhwAAHJAmAMAQA4IcwAAyAFhDgAABy7iP+0T/pQfFl0cAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'author'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_18" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Text="[bookAuthor]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLScrW-vq8m_AsD-Egt1rqoM-24qH6tniHj8lzJuaHa1FG_ctjw/viewform" ContentHash="gkq_E2RBiEqCzLV66zgZVw" CvElementArea="584, 918, 380, 36" CvTextArea="587, 927, 103, 16" CvTextArgument="Your answer" CvType="InputBox" DesignTimeRectangle="589, 921, 369, 30" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'author'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' idx='6' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" Guid="a6cdfa3a-824c-4e89-926b-e049835d25ec" InformativeScreenshot="ab25d2d21d72284f9d047e68ec5dc951.png" Reference="lvSrrP8hH0CV8Grn9LKFSg/4IOJb83ZlkK8R78HFMxYCg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='WPL Purchase Suggestion Form' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArea="587, 859, 76, 18" CvTextArgument="Author *" CvType="Text" DesignTimeRectangle="589, 853, 738, 30" FriendlyName="'author'" FullSelectorArgument="&lt;webctrl tag='DIV' innertext='Author *' idx='4' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DIV' innertext='Author *' check:text='Author *' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAuYAAAAiCAYAAAATfxzYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAS4SURBVHhe7d3RS1tXAMfx/SkTLD6klCL0YULAQcCBEEbAl0EfAnkQCysWBt0oEiaSl5KBYmFQH4LCxMKQsFH6Mh/EFFbMQ1GYM51ikE7ZHIEVInX8dk/uSUxubqJOjVf2/UCQe+71eh+/Hs49+UAAAAAArhxhDgAAAAQAYQ4AAAAEAGEOAAAABABhDgAAAAQAYQ4AAAAEAGEOAAAABABhDgAAAAQAYQ4AAAAEAGEOAAAABEBgwnw11a0PuxKaf2sHAAAAgP+R9mF+tK6psBPMoaRWynbsnPafJZwA79bEKztgBS7Mj15q6/YNbeftMQAAAHCJ2oZ5eTmpHieiTUgPZ0t29HyuTZgrr23CHAAAAB3SJszL+umRE8vhhOIx52d8Qfv2zHkEOswPX6r4zYL2tkp6Xxfm7/8qaG8xrd1f7HUAAADABWsd5gdZDTsBHX6yrp25ISeah5TZtufqvV1Q3Myqp5qnlhti+1WqEuTeTzXQa9cW97UyOaJIr3v+VmxUmbzPbP1RSWvZlIYjve69Qh8p9uCpVrz/PdSeL6edbFIxc99QWqv2dIOtOW0O3NSGE+QbA32NP/v69OaHor0QAAAAuFgtw9yN8agyBefAxm14ct09We+0YX5Q0MpyTovj0UpID8/kKsebB/XX9isSCVVifCKd1uPxUQ2G6u5Rs6/nXww44yHdSSSVyWaVqV4bMnFvLzOqzxfuV9hcPxjVYPSpf5hbh38UtPu1DfJ4Wns7JR0e2ZMAAADAJWgR5gVlok7Mxma1UzkuafGeid6UVr2Betowt9ovZelWJJVTqe5vlJfcde6ffXdc26UfRytjMecfhYZ3UovOs5g4rz23o/p8Jtj9Zvx9/LO7oDd9N/XbdEq/3v5YWz9f0JuvAAAAQAv+Yf56WmEnZuPPjteFlLIjlRnqsWVPpF5omN9tnO02mu6/r/m4CW3/nWLWJvud+/Rrqjq5X/398ZwdOMFhXtuf3tDGwxf62zn8c+YTbfQltPu7exoAAAC4DD5hXtZKMuTE7YgW7TKTitIL3TeBey+rhhXfFxrmjddWNN0/rwlznMj6v4xq17LHv7dn2zyfr3cFFR8+OA5xE+rDX2l3i1lzAAAAXJ7mMC8vacyErDfAWwV7p8P8pNCuhnl1tv+sYQ4AAABcgaYwd5esmEhu/YnN1a036XSYnzRjniPMAQAAcP14wryojNmzvGtI982uKE2fLxUzL1eGp7VWfUGz42H+H9eYE+YAAAAIsMYw355VzInYnmSucbeTOrXwfW0HlNdjb6wb7/KaiDTHdi3MPe9inj7M63ZlmTF7OdZptysLYQ4AAIAAawjz5uj24RPva0/MnuLdunU36c6sj4+6X+Rjgtgb2+vuji89g+5e5c/tFoZnCXMza17dx3zw85Qy2SXNp0/Yx5wwBwAAQIAdh3k5pzETttFZbdohf3ZP8/qXQI8839YZGdFEtqDNyuy4N7bLWvs2oTvmb3X1asr28tnC3OH3zZ+PZrXqXXhOmAMAAOAaaHr5EwAAAEDnEeYAAABAABDmAAAAQAAQ5gAAAEAAEOYAAABAABDmAAAAQAAQ5gAAAEAAEOYAAABAABDmAAAAwJWT/gUNgCgfl3tI6gAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'eAudiobook'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLScrW-vq8m_AsD-Egt1rqoM-24qH6tniHj8lzJuaHa1FG_ctjw/viewform" ContentHash="vfWsLap3hESbsbTyWHabKA" CvTextArea="629, 1092, 98, 17" CvTextArgument="eAudiobook" CvType="Text" DesignTimeRectangle="589, 1089, 728, 30" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'eAudiobook'" FullSelectorArgument="&lt;webctrl idx='9' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='LABEL' class='docssharedWizToggleLabeledContainer ajBQVb N2RpBe' aaname='' check:innerText='eAudiobook' /&gt;" Guid="404e527c-0c5e-4725-abaf-f82b25e52eef" InformativeScreenshot="cab7d1866a58c5c3f45e5297d22440c9.png" Reference="lvSrrP8hH0CV8Grn9LKFSg/dWPerVkdHkq3lqdl_DO9uQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='WPL Purchase Suggestion Form' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'submit'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLScrW-vq8m_AsD-Egt1rqoM-24qH6tniHj8lzJuaHa1FG_ctjw/viewform" ContentHash="WIuiz_T1fUuhQCWU67RfIg" DesignTimeRectangle="559, 1017, 119, 45" DesignTimeScaleFactor="1.25" FriendlyName="'submit'" FullSelectorArgument="&lt;webctrl tag='SPAN' innertext='Submit' idx='1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' innertext='Submit' check:text='Submit' /&gt;" Guid="1600fd85-15a4-460d-9fd0-ae3370b4ba97" InformativeScreenshot="ccbbe2a17ddf896f3747909587315894.png" Reference="lvSrrP8hH0CV8Grn9LKFSg/yT9I7y70BU64Rvf96cZZzA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='WPL Purchase Suggestion Form' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="589, 1017, 59, 45" ElementType="Text" FriendlyName="'submit'" FullSelectorArgument="&lt;webctrl tag='SPAN' innertext='Submit' idx='2' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' innertext='Submit' check:text='Submit' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="g46PmPdtFUeyHnfAv-Z9mw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAA4SURBVDhPY0i32n4AiP+TifeDDMAmQTQeZAbAADIbG0DWQ10DyMGjXhh0XiAHU8WA/eiCxOPtuwEl0a7qam5sogAAAABJRU5ErkJggg==" InformativeScreenshot="744bc7e1c922566b8416c27560aba651.jpg" Reference="lvSrrP8hH0CV8Grn9LKFSg/Zf0gk4s-t0KJ3cChhvJNwA" Selector="&lt;html app='chrome.exe' title='WPL Purchase Suggestion Form' /&gt;" Title="WPL Purchase Suggestion Form" Url="https://docs.google.com/forms/d/e/1FAIpQLScrW-vq8m_AsD-Egt1rqoM-24qH6tniHj8lzJuaHa1FG_ctjw/viewform" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Another Site" sap:VirtualizedContainerService.HintSize="529.6,489.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="17f6506f-5248-4f53-9a69-64d8898f663d" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,272.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'another button'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="17f6506f-5248-4f53-9a69-64d8898f663d" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/u/0/d/e/1FAIpQLScrW-vq8m_AsD-Egt1rqoM-24qH6tniHj8lzJuaHa1FG_ctjw/formResponse" ContentHash="mNxOTkjEwECxt_fHC7BQAw" DesignTimeRectangle="600, 601, 195, 21" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'another button'" FullSelectorArgument="&lt;webctrl tag='A' innertext='Submit another response' /&gt;" FuzzySelectorArgument="&lt;webctrl innertext='Submit another response' check:text='Submit another response' /&gt;" Guid="9871cd15-755c-4292-886c-4428b5abc23c" InformativeScreenshot="642277f5186a6c1d3955df524fb0def8.png" Reference="lvSrrP8hH0CV8Grn9LKFSg/9MatRNj3tk-ZOe-9dCfLUw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='WPL Purchase Suggestion Form' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="600, 423, 738, 70" ElementType="Text" FriendlyName="'another button'" FullSelectorArgument="&lt;webctrl tag='DIV' innertext='WPL Purchase Suggestion Form' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DIV' innertext='WPL Purchase Suggestion Form' check:text='WPL Purchase Suggestion Form' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="d3U5cNRhDUmo9bvy5Om0xg" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAA4SURBVDhPY0i32n4AiP+TifeDDMAmQTQeZAbAADIbG0DWQ10DyMGjXhh0XiAHU8WA/eiCxOPtuwEl0a7qam5sogAAAABJRU5ErkJggg==" InformativeScreenshot="56a42994f9b096af47cec9d7191fc5f8.jpg" Reference="lvSrrP8hH0CV8Grn9LKFSg/KwWPAEyB9Uqhi-EVEmPF4Q" Selector="&lt;html app='chrome.exe' title='WPL Purchase Suggestion Form' /&gt;" Title="WPL Purchase Suggestion Form" Url="https://docs.google.com/forms/u/0/d/e/1FAIpQLScrW-vq8m_AsD-Egt1rqoM-24qH6tniHj8lzJuaHa1FG_ctjw/formResponse" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Queue.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="529.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Add to Queue.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="title">[bookTitle]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="author">[bookAuthor]</InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+    </ui:ForEach>
+  </Sequence>
+</Activity>

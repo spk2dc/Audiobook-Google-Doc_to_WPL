@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Another Site",
+  "Type": "App",
+  "Id": "VnJick1q9UmtzjueaZszkw",
+  "Reference": "lvSrrP8hH0CV8Grn9LKFSg/VnJick1q9UmtzjueaZszkw",
+  "Created": "2023-09-30T21:58:27.5826788Z",
+  "Updated": "2023-09-30T21:58:44.8382958Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.8.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.8.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

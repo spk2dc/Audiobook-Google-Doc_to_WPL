@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="vfWsLap3hESbsbTyWHabKA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLScrW-vq8m_AsD-Egt1rqoM-24qH6tniHj8lzJuaHa1FG_ctjw/viewform" CvTextArea="629, 1092, 98, 17" CvTextArgument="eAudiobook" CvType="Text" DesignTimeRectangle="589, 1089, 728, 30" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'eAudiobook'" FullSelectorArgument="&lt;webctrl idx='9' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='LABEL' class='docssharedWizToggleLabeledContainer ajBQVb N2RpBe' aaname='' check:innerText='eAudiobook' /&gt;" Guid="404e527c-0c5e-4725-abaf-f82b25e52eef" ScopeSelectorArgument="&lt;html app='chrome.exe' title='WPL Purchase Suggestion Form' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="cab7d1866a58c5c3f45e5297d22440c9.png" xmlns="">0FozUQ3s8REaWx-GX07lRuA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,15 @@
+﻿{
+  "Name": "Another Site",
+  "Type": "Screen",
+  "Id": "KwWPAEyB9Uqhi-EVEmPF4Q",
+  "Reference": "lvSrrP8hH0CV8Grn9LKFSg/KwWPAEyB9Uqhi-EVEmPF4Q",
+  "ParentRef": "lvSrrP8hH0CV8Grn9LKFSg/b-FxaenEb0Wa5XlfswHqoA",
+  "Created": "2023-09-30T21:59:08.1094908Z",
+  "Updated": "2023-09-30T21:59:24.7528272Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.8.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.8.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

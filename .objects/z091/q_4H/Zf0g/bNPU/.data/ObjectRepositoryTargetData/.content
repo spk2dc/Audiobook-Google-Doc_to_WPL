@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="SSZSLmyzWka8osKn0ZWxhA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLScrW-vq8m_AsD-Egt1rqoM-24qH6tniHj8lzJuaHa1FG_ctjw/viewform" CvTextArea="627, 892, 103, 21" CvTextArgument="Main Library" CvType="Text" DesignTimeRectangle="589, 888, 728, 30" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Main Library'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='docssharedWizToggleLabeledContainer ajBQVb N2RpBe' aaname='' check:innerText='Main Library' /&gt;" Guid="b8535bb3-d1f2-4e5c-8467-52ddb92c575b" ScopeSelectorArgument="&lt;html app='chrome.exe' title='WPL Purchase Suggestion Form' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="f042dd014c5c4e5701d35272dddf93de.png" xmlns="">09NAAi1OLG02UQ-4WlWADVw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
