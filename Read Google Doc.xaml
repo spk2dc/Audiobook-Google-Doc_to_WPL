@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>850.4,1510.4</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>850.4,1554.4</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Read_Google_Doc_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -88,7 +88,7 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Read_Google_Doc" sap:VirtualizedContainerService.HintSize="689.6,1445.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Read_Google_Doc" sap:VirtualizedContainerService.HintSize="689.6,1489.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="list" />
     </Sequence.Variables>
@@ -97,28 +97,28 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ugad:GoogleDocsApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" FileId="{x:Null}" Filename="{x:Null}" ParentFolderId="{x:Null}" ParentFolderPath="{x:Null}" Timeout="{x:Null}" Account="senthil.kannan.61109@gmail.com" Action="UseExisting" DisplayName="Use Google Document" DocumentId="https://docs.google.com/document/d/1sJEIjw3xnbR9aVUcLegxXj44YwMy_Oqa391ea4OWHlY/edit?usp=drivesdk" DocumentName="Audiobook List WPL" sap:VirtualizedContainerService.HintSize="627.2,1333.6" sap2010:WorkflowViewState.IdRef="GoogleDocsApplicationScope_1" Mode="Browse" UseConnectionService="False" UserEmail="senthil.kannan.61109@gmail.com">
+    <ugad:GoogleDocsApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" FileId="{x:Null}" Filename="{x:Null}" ParentFolderId="{x:Null}" ParentFolderPath="{x:Null}" Timeout="{x:Null}" Account="senthil.kannan.61109@gmail.com" Action="UseExisting" DisplayName="Use Google Document" DocumentId="https://docs.google.com/document/d/1sJEIjw3xnbR9aVUcLegxXj44YwMy_Oqa391ea4OWHlY/edit?usp=drivesdk" DocumentName="Audiobook List WPL" sap:VirtualizedContainerService.HintSize="627.2,1377.6" sap2010:WorkflowViewState.IdRef="GoogleDocsApplicationScope_1" Mode="Browse" UseConnectionService="False" UserEmail="senthil.kannan.61109@gmail.com">
       <ugad:GoogleDocsApplicationScope.Body>
         <ActivityAction x:TypeArguments="ugad:IGoogleDocTarget">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ugad:IGoogleDocTarget" Name="Document" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="593.6,1051.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="593.6,1095.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <uga:ReadAllText ContinueOnError="{x:Null}" DocumentId="{x:Null}" AuthScopesInvalid="False" DisplayName="Read All Text" GoogleDoc="[Document]" sap:VirtualizedContainerService.HintSize="531.2,140.8" sap2010:WorkflowViewState.IdRef="ReadAllText_1" Result="[list]" />
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="531.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Original List: &quot;+list]" />
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="531.2,272" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+            <ui:CommentOut sap2010:Annotation.AnnotationText="Since pulling books from a new Google Doc list, there is nothing to remove now cause I do the queue myself so commenting out the split to remove links in the beginning." DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="531.2,498.4" sap2010:WorkflowViewState.IdRef="CommentOut_1">
               <ui:CommentOut.Body>
-                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,193.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,376" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Original List: &quot;+list]" />
                   <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_2">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[list]</OutArgument>
@@ -129,6 +129,11 @@
                   </Assign>
                 </Sequence>
               </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
             <Assign sap:VirtualizedContainerService.HintSize="531.2,81.6" sap2010:WorkflowViewState.IdRef="Assign_1">
               <Assign.To>
