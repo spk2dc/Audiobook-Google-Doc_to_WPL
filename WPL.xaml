@@ -108,8 +108,8 @@
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="WPL" sap:VirtualizedContainerService.HintSize="668.8,4206.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Name="bookAuthor" />
-      <Variable x:TypeArguments="x:String" Name="bookTitle" />
+      <Variable x:TypeArguments="x:String" Name="author" />
+      <Variable x:TypeArguments="x:String" Name="title" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -173,7 +173,7 @@
                     </sap:WorkflowViewStateService.ViewState>
                     <Assign sap:VirtualizedContainerService.HintSize="433.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_3">
                       <Assign.To>
-                        <OutArgument x:TypeArguments="x:String">[bookTitle]</OutArgument>
+                        <OutArgument x:TypeArguments="x:String">[title]</OutArgument>
                       </Assign.To>
                       <Assign.Value>
                         <InArgument x:TypeArguments="x:String">[currentItem.Split(" by ")(0)]</InArgument>
@@ -181,10 +181,10 @@
                     </Assign>
                     <Assign sap:VirtualizedContainerService.HintSize="433.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_4">
                       <Assign.To>
-                        <OutArgument x:TypeArguments="x:String">[bookAuthor]</OutArgument>
+                        <OutArgument x:TypeArguments="x:String">[author]</OutArgument>
                       </Assign.To>
                       <Assign.Value>
-                        <InArgument x:TypeArguments="x:String">[currentItem.Split(" by")(1).Split(" - ")(0)]</InArgument>
+                        <InArgument x:TypeArguments="x:String">[currentItem.Split(" by.")(1).Split(" - ")(0)]</InArgument>
                       </Assign.Value>
                     </Assign>
                     <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_14" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Text="Senthil Kannan" Version="V3">
@@ -225,7 +225,7 @@
                         <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLScrW-vq8m_AsD-Egt1rqoM-24qH6tniHj8lzJuaHa1FG_ctjw/viewform" ContentHash="SSZSLmyzWka8osKn0ZWxhA" CvTextArea="627, 892, 103, 21" CvTextArgument="Main Library" CvType="Text" DesignTimeRectangle="589, 888, 728, 30" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'library'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='docssharedWizToggleLabeledContainer ajBQVb N2RpBe' aaname='' check:innerText='Main Library' /&gt;" Guid="b8535bb3-d1f2-4e5c-8467-52ddb92c575b" InformativeScreenshot="f042dd014c5c4e5701d35272dddf93de.png" Reference="lvSrrP8hH0CV8Grn9LKFSg/bNPU2Pp9rUGK-1AaqCU7TA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='WPL Purchase Suggestion Form' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
                       </uix:NClick.Target>
                     </uix:NClick>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'title'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_17" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Text="[bookTitle]" Version="V3">
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'title'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_17" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Text="[title]" Version="V3">
                       <uix:NTypeInto.Target>
                         <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLScrW-vq8m_AsD-Egt1rqoM-24qH6tniHj8lzJuaHa1FG_ctjw/viewform" ContentHash="tOJXc-eIPUqly-VAhsVbvg" CvElementArea="581, 728, 384, 40" CvTextArea="587, 740, 102, 16" CvTextArgument="Your answer" CvType="InputBox" DesignTimeRectangle="589, 734, 369, 30" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'title'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' idx='5' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" Guid="7d62c1aa-c812-4fd2-aa3a-2c8d5a1143f8" InformativeScreenshot="b61360de99d5498fe64ccab7290288de.png" Reference="lvSrrP8hH0CV8Grn9LKFSg/4J0vpytyLEyq7n0-Wu6jqg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='WPL Purchase Suggestion Form' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
@@ -236,7 +236,7 @@
                         </uix:TargetAnchorable>
                       </uix:NTypeInto.Target>
                     </uix:NTypeInto>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'author'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_18" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Text="[bookAuthor]" Version="V3">
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'author'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_18" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Text="[author]" Version="V3">
                       <uix:NTypeInto.Target>
                         <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLScrW-vq8m_AsD-Egt1rqoM-24qH6tniHj8lzJuaHa1FG_ctjw/viewform" ContentHash="gkq_E2RBiEqCzLV66zgZVw" CvElementArea="584, 918, 380, 36" CvTextArea="587, 927, 103, 16" CvTextArgument="Your answer" CvType="InputBox" DesignTimeRectangle="589, 921, 369, 30" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'author'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' idx='6' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" Guid="a6cdfa3a-824c-4e89-926b-e049835d25ec" InformativeScreenshot="ab25d2d21d72284f9d047e68ec5dc951.png" Reference="lvSrrP8hH0CV8Grn9LKFSg/4IOJb83ZlkK8R78HFMxYCg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='WPL Purchase Suggestion Form' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
@@ -302,8 +302,8 @@
             </uix:NApplicationCard>
             <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Queue.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="529.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Add to Queue.xaml">
               <ui:InvokeWorkflowFile.Arguments>
-                <InArgument x:TypeArguments="x:String" x:Key="title">[bookTitle]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="author">[bookAuthor]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="title">[title]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="author">[author]</InArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
           </Sequence>
